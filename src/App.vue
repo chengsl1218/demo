@@ -1,16 +1,34 @@
 <script setup lang="ts">
 import { RouterView } from "vue-router";
+
+// import { h } from "vue";
+// type   props  children
+// const vnode = h("div", { class: "test" }, ["hello", h("span", "456")]);
 </script>
 
 <template>
-  <div>hello</div>
+  <!-- <vnode /> -->
+
+  <SvgIcon icon="Edit" size="18" color="blue" />
+  <!-- <div>hello</div>
   <el-button>Default</el-button>
   <el-button type="primary">Primary</el-button>
   <el-button type="success">Success</el-button>
   <el-button type="info">Info</el-button>
-  <el-button type="warning">Warning</el-button>
+  <el-button type="warning">Warning</el-button> -->
 
-  <Edit style="width: 1em; height: 1em; margin-right: 8px" />
+  <!-- <div id="hello"></div> -->
+
+  <!-- const vnode = {
+    type : "div",
+    props : {
+      id : "hello"
+    },
+    children : [
+    ]
+  } -->
+
+  <!-- <Edit style="width: 1em; height: 1em; margin-right: 8px" />
   <Share style="width: 1em; height: 1em; margin-right: 8px" />
   <Delete style="width: 1em; height: 1em; margin-right: 8px" />
   <Search style="width: 1em; height: 1em; margin-right: 8px" />
@@ -23,14 +41,12 @@ import { RouterView } from "vue-router";
   </el-icon>
   <el-icon>
     <Delete />
-  </el-icon>
+  </el-icon> -->
+  <!-- 
+  常规封装 render封装 jsx
+
+  <svg-icon icon="elid" size="" color=""></svg-icon> -->
   <RouterView />
 </template>
 
-<style scoped lang="scss">
-div {
-  width: 200px;
-  height: 200px;
-  background-color: red;
-}
-</style>
+<style scoped lang="scss"></style>
