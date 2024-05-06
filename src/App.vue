@@ -1,5 +1,14 @@
 <script setup lang="ts">
 import { RouterView } from "vue-router";
+import axios from "axios";
+const handleClick = async () => {
+  const res = await axios.request({
+    url: " https://mock.mengxuegu.com/mock/66384848cab9671f88bd2f1e/api/focus",
+    method: "GET",
+  });
+
+  console.log("Res==>", res);
+};
 
 // import { h } from "vue";
 // type   props  children
@@ -9,7 +18,7 @@ import { RouterView } from "vue-router";
 <template>
   <!-- <vnode /> -->
 
-  <SvgIcon icon="Edit" size="18" color="blue" />
+  <SvgIcon icon="Edit" size="18" color="blue" @click="handleClick" />
   <!-- <div>hello</div>
   <el-button>Default</el-button>
   <el-button type="primary">Primary</el-button>
