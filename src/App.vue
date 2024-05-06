@@ -1,13 +1,10 @@
 <script setup lang="ts">
 import { RouterView } from "vue-router";
-import axios from "axios";
-const handleClick = async () => {
-  const res = await axios.request({
-    url: " https://mock.mengxuegu.com/mock/66384848cab9671f88bd2f1e/api/focus",
-    method: "GET",
-  });
+import { test } from "@/api/test";
 
-  console.log("Res==>", res);
+const handleClick = async () => {
+  const res = await test();
+  console.log(res);
 };
 
 // import { h } from "vue";
