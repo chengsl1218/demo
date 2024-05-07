@@ -1,5 +1,7 @@
 <template>
-  <el-main style="background-color: green">Main</el-main>
+  <el-main style="background-color: green">
+    <router-view></router-view>
+  </el-main>
 </template>
 
 <script setup lang="ts"></script>

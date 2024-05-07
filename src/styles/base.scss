@@ -3,6 +3,11 @@
     padding: 0;
 }
 
-html,body,#app,.el-container {
+html,body,#app {
+    height: 100%;
+    width: 100%;
+}
+
+.layout-container{
     height: 100%;
 }

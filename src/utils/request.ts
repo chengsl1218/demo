@@ -11,8 +11,7 @@ import axios, {
 
 // 创建axios实例对象
 const service: AxiosInstance = axios.create({
-  // baseURL: import.meta.env.VITE_APP_BASE_API,
-  baseURL: "https://mock.mengxuegu.com/mock/66384848cab9671f88bd2f1e/api",
+  baseURL: import.meta.env.VITE_APP_BASE_API,
   timeout: 10000,
 });
 

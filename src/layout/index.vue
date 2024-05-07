@@ -1,23 +1,21 @@
 <script setup lang="ts">
-// import LayoutAside from "./layoutAside/index.vue";
-// import LayoutHeader from "./layoutHeader/index.vue";
-// import LayoutMain from "./layoutMain/index.vue";
-
 import { defineAsyncComponent } from "vue";
-// 异步加载
+// 侧边栏组件
 const LayoutAside = defineAsyncComponent(
   () => import("./layoutAside/index.vue")
 );
+// 头部组件
 const LayoutHeader = defineAsyncComponent(
   () => import("./layoutHeader/index.vue")
 );
+// 主体内容组件
 const LayoutMain = defineAsyncComponent(() => import("./layoutMain/index.vue"));
 </script>
 
 <template>
-  <el-container>
+  <el-container class="layout-container">
     <LayoutAside></LayoutAside>
-    <el-container>
+    <el-container direction="vertical">
       <LayoutHeader></LayoutHeader>
       <LayoutMain></LayoutMain>
     </el-container>
