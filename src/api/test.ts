@@ -1,8 +1,17 @@
-import request from "../utils/request";
+import request from "@/utils/request";
 
-export const test = () => {
-  return request({
-    url: "/",
-    method: "get",
-  });
+type resType = {
+  _id: string;
+  title: string;
+  status: number;
+  pic: string;
+  url: number;
+};
+
+type resultType = {
+  result: resType[];
+};
+
+export const getList = () => {
+  return request<resultType>("/focus", "GET");
 };
