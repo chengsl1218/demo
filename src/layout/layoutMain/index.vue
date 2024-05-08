@@ -1,9 +1,15 @@
 <template>
-  <el-main style="background-color: green">
-    <router-view></router-view>
-  </el-main>
+    <!-- <div> -->
+        <el-main style="background-color: #f0f2f5;">
+            <router-view></router-view>
+        </el-main>
+    <!-- </div> -->
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
 
-<style scoped lang="scss"></style>
+</script>
+
+<style scoped>
+
+</style>

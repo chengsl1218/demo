@@ -1,0 +1,69 @@
+@charset "UTF-8";
+:root {
+  --jy-color-white: #fff;
+  --jy-color-black: #2b2f38;
+  --jy-color-primary: #1966ff;
+  --jy-border-color: #f1f2f3;
+  --jy-color-hover: #3c3c3c;
+  --jy-bg-menuMainColor: var(--jy-color-white) !important;
+  --jy-bg-menuActiveColor: var(--jy-color-black) !important;
+  --jy-bg-menuHoverColor: var(--jy-color-black) !important;
+  --jy-text-menuMainColor: var(--jy-color-black) !important;
+  --jy-text-menuActiveColor: var(--jy-color-white) !important;
+  --jy-text-menuHoverColor: var(--jy-color-white) !important;
+  --jy-bg-headerBarColor: var(--jy-color-white) !important;
+  --jy-color-user-hover: var(--jy-color-hover-rgba) !important;
+  --jy-border-color-light: var(--jy-border-color) !important;
+}
+
+.layout-container .layout-aside {
+  height: 100vh;
+}
+
+.layout-container .layout-aside .layout-logo {
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: var(--el-color-primary);
+  cursor: pointer;
+}
+
+.layout-container .layout-aside .layout-logo .layout-logo-img {
+  width: 26px;
+  height: 26px;
+}
+
+.layout-container .layout-aside .layout-logo span {
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*** NavMenu 导航菜单样式 
+------------------------------------- ****/
+.el-menu {
+  border-right: none !important;
+}
+
+.el-menu-item, .el-sub-menu__title {
+  color: var(--jy-text-menuMainColor) !important;
+}
+
+.el-sub-menu__title:hover {
+  background-color: transparent !important;
+}
+
+.el-menu-item:hover {
+  color: var(--jy-text-menuHoverColor) !important;
+  background-color: var(--jy-bg-menuHoverColor) !important;
+}
+
+.el-menu-item.is-active {
+  color: var(--jy-text-menuActiveColor) !important;
+  background-color: var(--jy-bg-menuActiveColor) !important;
+}

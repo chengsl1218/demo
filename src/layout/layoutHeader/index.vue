@@ -1,7 +1,15 @@
 <template>
-  <el-header style="background-color: yellow">Header</el-header>
+    <!-- <div> -->
+        
+        <el-header style="background-color: #545c64;">Header</el-header>
+        
+    <!-- </div> -->
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
 
-<style scoped lang="scss"></style>
+</script>
+
+<style scoped>
+
+</style>
